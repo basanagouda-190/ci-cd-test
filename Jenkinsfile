@@ -21,7 +21,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 dir("$APP_DIR") {
-                    
+                    git branch: 'main', credentialsId: 'd8d4a186-6607-465b-acfc-66e62036ecd6', url: 'https://github.com/basanagouda-190/ci-cd-test.git'
                 }
             }
         }
